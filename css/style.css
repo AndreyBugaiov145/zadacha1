@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.backgroundPage{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+ 	background : url("../img/fon.jpg") center no-repeat ;
+ 	background-size: cover;
+}
+
+div.page{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+/* Стили для шапки*/
+header{
+	float: left;
+	background-color:#E0E0E0FF; 
+	border-bottom: 1px solid silver;
+	width: 100%;
+	min-height: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	margin-bottom: 20px;
+	
+}
+header div.flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+}
+span.titlePage{
+	font-size: 2em;
+	color: #0CF2EDFF;
+	font-family: Comic Sans MS, sans-serif; 
+}
+
+header div.flex div{
+	font-size: 1.3em;
+}
+span#contacts{
+	cursor: pointer;
+}
+.showContacts{
+	float: left;
+	position: absolute;
+	right:120px;
+	top:8px;
+	background-color: rgba(255,255,255,0.9);
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 999;
+	transition: 0.6s;
+	opacity: 0;
+}
+.showContacts span{
+	float: left;
+	
+}
+
+/* Стили для wraper*/
+div.wraper{
+	float: left;
+	width: 100%;
+}
+div.wraper div.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.5em;
+	grid-auto-rows: minmax(100px,auto);
+}
+div.wraper div.grid a{
+	height: 100%;
+	width: 100%;	
+}
+div.wraper div.grid div{
+	background-color: rgba(255,255,255,0.3)
+}
+div.wraper div.grid img  {
+	float: left;
+	height: 100%;
+}
+div.wraper div.grid span {
+	float: left;
+}
+div.wraper div.grid a {
+	float: left;
+	height: 100%;
+}
+.box{
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.box img  {
+	float: left;
+	height: 100%;
+	width: 300px;
+}
+.box span {
+	float: left;
+	font-size: 1.2em;
+	line-height: 135%;
+}
+
+.imgContainer{
+	float: left;
+}
+div.boxContent{
+	float: left;
+	color: black;
+	padding: 5px;
+}
+
+div.boxContent p ,div.boxContent span  {
+	text-indent: 8px;
+}
+div.boxContent span:first-letter{
+	text-transform:  uppercase;
+}
+
+/* Стили для подвала*/
